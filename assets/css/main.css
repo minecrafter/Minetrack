@@ -20,8 +20,7 @@ body {
     padding: 20px 0;
     text-align: center;
     border-top: 1px solid #DED3D6;
-    width: 840px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 #header a {
@@ -38,10 +37,25 @@ body {
 #tagline {
     padding: 10px 0;
     text-align: center;
-    width: 840px;
-    margin: 0 auto;
+    width: 100%;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
+}
+
+/* Column layout */
+#server-container {
+    width: 1600px;
+    margin: 10px auto;
+}
+
+.container {
+    overflow: auto;
+}
+
+.container-column {
+    float: left;
+    display: inline-block;
+    width: 800px;
 }
 
 /* Colors used by the Mojang service's status bar */
@@ -64,10 +78,6 @@ body {
 }
 
 /* Server listing */
-#server-container {
-    width: 800px;
-    margin: 10px auto;
-}
 
 #server-container .server:nth-child(2n) {
     background: #4E4E4E;

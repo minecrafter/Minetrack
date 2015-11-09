@@ -138,7 +138,8 @@ $(document).ready(function() {
         lastLatencyEntries = {};
         graphs = {};
 
-        $('#server-container').html('');
+        $('#PE-server-container').html('');
+        $('#PC-server-container').html('');
     });
 
 	socket.on('add', function(servers) {
@@ -173,7 +174,7 @@ $(document).ready(function() {
                         <div class="column" style="float: right;">\
                             <div class="chart" id="chart_' + safeName(info.name) + '"></div>\
                         </div>'
-            }).appendTo("#server-container");
+            }).appendTo('#' + info.type + '-server-container');
 
             var favicon = MISSING_FAVICON_BASE64;
 
